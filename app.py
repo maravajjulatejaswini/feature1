@@ -61,6 +61,5 @@ def index():
                 print(f"Error processing image: {e}")
                 prediction = "Error during prediction"
     return render_template('index.html', prediction=prediction)
-
-
-
+if __name__=="__main__":
+    app.run()
